@@ -9,18 +9,60 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">147,110</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num attn">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">94,857</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">practice_scripts1.TCC01_CreateOrganisations</td><td><a href="#m0">create_emptyorg</a></td><td rowspan="1">1646985499464</td><td rowspan="1">12791</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">practice_scripts1.TCC01_CreateOrganisations</td><td><a href="#m1">create_organisations</a></td><td rowspan="1">1646985518466</td><td rowspan="1">20505</td></tr><tr class="passedodd"><td rowspan="1">practice_scripts1.TCC02_CreateOrganisationWithDD</td><td><a href="#m2">createOrgWithDD</a></td><td rowspan="1">1646985464542</td><td rowspan="1">25135</td></tr><tr class="passedeven"><td rowspan="2">practice_scripts1.TCC03_Contacts</td><td><a href="#m3">create_contact</a></td><td rowspan="1">1646985547452</td><td rowspan="1">24241</td></tr><tr class="passedeven"><td><a href="#m4">createcontactWithouOrg</a></td><td rowspan="1">1646985577794</td><td rowspan="1">19951</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">practice_scripts1.TCC01_CreateOrganisations</td><td><a href="#m0">loginToApp</a></td><td rowspan="1">1646997814975</td><td rowspan="1">899</td></tr><tr class="failedodd"><td rowspan="1">practice_scripts1.TCC03_Contacts</td><td><a href="#m1">loginToApp</a></td><td rowspan="1">1646997850621</td><td rowspan="1">877</td></tr><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">practice_scripts1.TCC01_CreateOrganisations</td><td><a href="#m2">create_emptyorg</a></td><td rowspan="1">1646997802864</td><td rowspan="1">10347</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">practice_scripts1.TCC01_CreateOrganisations</td><td><a href="#m3">closebrowser</a></td><td rowspan="1">1646997815880</td><td rowspan="1">-1646997815880</td></tr><tr class="skippedeven"><td><a href="#m4">logout</a></td><td rowspan="1">1646997815880</td><td rowspan="1">-1646997815880</td></tr><tr class="skippedodd"><td rowspan="2">practice_scripts1.TCC03_Contacts</td><td><a href="#m5">closebrowser</a></td><td rowspan="1">1646997851502</td><td rowspan="1">-1646997851502</td></tr><tr class="skippedodd"><td><a href="#m6">logout</a></td><td rowspan="1">1646997851501</td><td rowspan="1">-1646997851501</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">practice_scripts1.TCC01_CreateOrganisations</td><td><a href="#m7">create_organisations</a></td><td rowspan="1">1646997815879</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">practice_scripts1.TCC03_Contacts</td><td><a href="#m8">createcontactWithouOrg</a></td><td rowspan="1">1646997851500</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">practice_scripts1.TCC02_CreateOrganisationWithDD</td><td><a href="#m9">createOrgWithDD</a></td><td rowspan="1">1646997768880</td><td rowspan="1">24690</td></tr><tr class="passedodd"><td rowspan="1">practice_scripts1.TCC03_Contacts</td><td><a href="#m10">create_contact</a></td><td rowspan="1">1646997824289</td><td rowspan="1">22690</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">practice_scripts1.TCC01_CreateOrganisations#create_emptyorg</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Organization Name cannot be empty}
+<h2>Test</h2><h3 id="m0">practice_scripts1.TCC01_CreateOrganisations#loginToApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
+  (Session info: chrome=99.0.4844.51)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;SRUHTI&apos;, ip: &apos;192.168.76.89&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef6110cf20d5613843083e515ef107f1, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58025/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef6110cf20d5613843083e515ef107f1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:613)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:984)
+	at com.crm.geneics.Base_class_Test.loginToApp(Base_class_Test.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">practice_scripts1.TCC03_Contacts#loginToApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
+  (Session info: chrome=99.0.4844.51)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;SRUHTI&apos;, ip: &apos;192.168.76.89&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [05d65b518fff6e673e59729016d4b436, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58050}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58050/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 05d65b518fff6e673e59729016d4b436
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:613)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:984)
+	at com.crm.geneics.Base_class_Test.loginToApp(Base_class_Test.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">practice_scripts1.TCC01_CreateOrganisations#create_emptyorg</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Organization Name cannot be empty}
   (Session info: chrome=99.0.4844.51): Organization Name cannot be empty
 Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
 System info: host: &apos;SRUHTI&apos;, ip: &apos;192.168.76.89&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e0a6133ce46d51a4e87b1d6493c42a86, findElement {using=xpath, value=//a[.=&apos;Organizations&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56946}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56946/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e0a6133ce46d51a4e87b1d6493c42a86
+Command: [ef6110cf20d5613843083e515ef107f1, findElement {using=xpath, value=//a[.=&apos;Organizations&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58025/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef6110cf20d5613843083e515ef107f1
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
@@ -37,9 +79,53 @@ Session ID: e0a6133ce46d51a4e87b1d6493c42a86
 	at practice_scripts1.TCC01_CreateOrganisations.create_emptyorg(TCC01_CreateOrganisations.java:59)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">practice_scripts1.TCC01_CreateOrganisations#create_organisations</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">practice_scripts1.TCC02_CreateOrganisationWithDD#createOrgWithDD</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">practice_scripts1.TCC03_Contacts#create_contact</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">practice_scripts1.TCC03_Contacts#createcontactWithouOrg</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">practice_scripts1.TCC01_CreateOrganisations#closebrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">practice_scripts1.TCC01_CreateOrganisations#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">practice_scripts1.TCC03_Contacts#closebrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">practice_scripts1.TCC03_Contacts#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">practice_scripts1.TCC01_CreateOrganisations#create_organisations</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
+  (Session info: chrome=99.0.4844.51)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;SRUHTI&apos;, ip: &apos;192.168.76.89&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef6110cf20d5613843083e515ef107f1, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58025/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef6110cf20d5613843083e515ef107f1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:613)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:984)
+	at com.crm.geneics.Base_class_Test.loginToApp(Base_class_Test.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">practice_scripts1.TCC03_Contacts#createcontactWithouOrg</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
+  (Session info: chrome=99.0.4844.51)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;SRUHTI&apos;, ip: &apos;192.168.76.89&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [05d65b518fff6e673e59729016d4b436, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58050}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58050/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 05d65b518fff6e673e59729016d4b436
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:613)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:984)
+	at com.crm.geneics.Base_class_Test.loginToApp(Base_class_Test.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">practice_scripts1.TCC02_CreateOrganisationWithDD#createOrgWithDD</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">practice_scripts1.TCC03_Contacts#create_contact</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

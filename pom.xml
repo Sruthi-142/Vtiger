@@ -65,6 +65,59 @@
 		<maven.compiler.target>1.7</maven.compiler.target>
 		<aspectj.version>1.8.10</aspectj.version>
 	</properties>
+<profiles>
+<profile>
+<id>smoke</id>
+<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.21.0</version>
+				<configuration>
+					<!-- TestNG Suite XML files list for test execution -->
+					<suiteXmlFiles>
+						<suiteXmlFile>testng_smoke_test.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+			<plugin>
+				<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+
+			</plugin>
+		</plugins>
+	</build>
+</profile>
+<profile>
+<id>regression</id>
+<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.21.0</version>
+				<configuration>
+					<!-- TestNG Suite XML files list for test execution -->
+					<suiteXmlFiles>
+						<suiteXmlFile>testngRegression.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+			<plugin>
+				<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+
+			</plugin>
+		</plugins>
+	</build>
+</profile>
+<profile>
+<id>batch</id>
 <build>
 		<plugins>
 			<plugin>
@@ -87,4 +140,7 @@
 			</plugin>
 		</plugins>
 	</build>
+</profile>
+
+</profiles>
 </project>

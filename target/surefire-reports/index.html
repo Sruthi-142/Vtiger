@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,  2 skipped,  2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -108,6 +108,25 @@
                     </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="practice_scripts1.TCC01_CreateOrganisations" class="method navigator-link" hash-for-method="create_organisations">create_organisations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="practice_scripts1.TCC03_Contacts" class="method navigator-link" hash-for-method="createcontactWithouOrg">createcontactWithouOrg</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                  <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
                       <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
@@ -122,16 +141,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="practice_scripts1.TCC03_Contacts" class="method navigator-link" hash-for-method="create_contact">create_contact</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="practice_scripts1.TCC01_CreateOrganisations" class="method navigator-link" hash-for-method="create_organisations">create_organisations</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="practice_scripts1.TCC03_Contacts" class="method navigator-link" hash-for-method="createcontactWithouOrg">createcontactWithouOrg</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -162,9 +171,9 @@
 Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
 System info: host: &apos;SRUHTI&apos;, ip: &apos;192.168.76.89&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e0a6133ce46d51a4e87b1d6493c42a86, findElement {using=xpath, value=//a[.=&apos;Organizations&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56946}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56946/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e0a6133ce46d51a4e87b1d6493c42a86
+Command: [ef6110cf20d5613843083e515ef107f1, findElement {using=xpath, value=//a[.=&apos;Organizations&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58025/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef6110cf20d5613843083e515ef107f1
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
@@ -186,6 +195,80 @@ Session ID: e0a6133ce46d51a4e87b1d6493c42a86
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">practice_scripts1.TCC01_CreateOrganisations</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="create_organisations">
+                  </a> <!-- create_organisations -->
+                  <span class="method-name">create_organisations</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
+  (Session info: chrome=99.0.4844.51)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;SRUHTI&apos;, ip: &apos;192.168.76.89&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef6110cf20d5613843083e515ef107f1, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58025/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef6110cf20d5613843083e515ef107f1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:613)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:984)
+	at com.crm.geneics.Base_class_Test.loginToApp(Base_class_Test.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">practice_scripts1.TCC03_Contacts</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcontactWithouOrg">
+                  </a> <!-- createcontactWithouOrg -->
+                  <span class="method-name">createcontactWithouOrg</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
+  (Session info: chrome=99.0.4844.51)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;SRUHTI&apos;, ip: &apos;192.168.76.89&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [05d65b518fff6e673e59729016d4b436, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58050}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58050/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 05d65b518fff6e673e59729016d4b436
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:613)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:984)
+	at com.crm.geneics.Base_class_Test.loginToApp(Base_class_Test.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -197,28 +280,6 @@ Session ID: e0a6133ce46d51a4e87b1d6493c42a86
                   <a name="create_contact">
                   </a> <!-- create_contact -->
                   <span class="method-name">create_contact</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createcontactWithouOrg">
-                  </a> <!-- createcontactWithouOrg -->
-                  <span class="method-name">createcontactWithouOrg</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">practice_scripts1.TCC01_CreateOrganisations</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="create_organisations">
-                  </a> <!-- create_organisations -->
-                  <span class="method-name">create_organisations</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -320,28 +381,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createOrgWithDD')
 data.setCell(0, 2, 'practice_scripts1.TCC02_CreateOrganisationWithDD')
-data.setCell(0, 3, 25135);
+data.setCell(0, 3, 24690);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'create_contact')
 data.setCell(1, 2, 'practice_scripts1.TCC03_Contacts')
-data.setCell(1, 3, 24241);
+data.setCell(1, 3, 22690);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'create_organisations')
+data.setCell(2, 1, 'create_emptyorg')
 data.setCell(2, 2, 'practice_scripts1.TCC01_CreateOrganisations')
-data.setCell(2, 3, 20505);
+data.setCell(2, 3, 10347);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'createcontactWithouOrg')
 data.setCell(3, 2, 'practice_scripts1.TCC03_Contacts')
-data.setCell(3, 3, 19951);
+data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'create_emptyorg')
+data.setCell(4, 1, 'create_organisations')
 data.setCell(4, 2, 'practice_scripts1.TCC01_CreateOrganisations')
-data.setCell(4, 3, 12791);
+data.setCell(4, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 57 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -360,7 +421,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">practice_scripts1.TCC03_Contacts</span>
+              <span class="ignored-class-name">practice_scripts1.TCC01_CreateOrganisations</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">beforeTest</span>
                 <br/>
@@ -373,7 +434,7 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">practice_scripts1.TCC01_CreateOrganisations</span>
+              <span class="ignored-class-name">practice_scripts1.TCC03_Contacts</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">beforeTest</span>
                 <br/>
@@ -400,110 +461,114 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">15 ms</span>
+                <span class="method-start">19 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">launchbrowser</span>
-                <span class="method-start">37 ms</span>
+                <span class="method-start">46 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApp</span>
-                <span class="method-start">6751 ms</span>
+                <span class="method-start">6804 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createOrgWithDD</span>
-                <span class="method-start">12044 ms</span>
+                <span class="method-start">12243 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logout</span>
-                <span class="method-start">37184 ms</span>
+                <span class="method-start">36937 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">39257 ms</span>
+                <span class="method-start">38744 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">practice_scripts1.TCC01_CreateOrganisations</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchbrowser</span>
-                <span class="method-start">39566 ms</span>
+                <span class="method-start">38865 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApp</span>
-                <span class="method-start">41778 ms</span>
+                <span class="method-start">40612 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">create_emptyorg</span>
-                <span class="method-start">46966 ms</span>
+                <span class="method-start">46227 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logout</span>
-                <span class="method-start">59789 ms</span>
+                <span class="method-start">56610 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">loginToApp</span>
-                <span class="method-start">61842 ms</span>
+                <span class="method-start">58338 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">create_organisations</span>
-                <span class="method-start">65968 ms</span>
+                <span class="method-start">59242 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logout</span>
-                <span class="method-start">86473 ms</span>
+                <span class="method-start">59243 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">88291 ms</span>
+                <span class="method-start">59243 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">practice_scripts1.TCC03_Contacts</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchbrowser</span>
-                <span class="method-start">88472 ms</span>
+                <span class="method-start">59244 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApp</span>
-                <span class="method-start">90258 ms</span>
+                <span class="method-start">60851 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">create_contact</span>
-                <span class="method-start">94954 ms</span>
+                <span class="method-start">67652 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logout</span>
-                <span class="method-start">119195 ms</span>
+                <span class="method-start">90342 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">loginToApp</span>
-                <span class="method-start">121150 ms</span>
+                <span class="method-start">93984 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createcontactWithouOrg</span>
-                <span class="method-start">125296 ms</span>
+                <span class="method-start">94863 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logout</span>
-                <span class="method-start">145247 ms</span>
+                <span class="method-start">94864 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">147011 ms</span>
+                <span class="method-start">94865 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">practice_scripts1.TCC02_CreateOrganisationWithDD</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">aftertest</span>
-                <span class="method-start">147124 ms</span>
+                <span class="method-start">94865 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">aftersuite</span>
-                <span class="method-start">147222 ms</span>
+                <span class="method-start">95084 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -8,6 +8,7 @@
           <include name="closebrowser"/>
           <include name="beforeTest"/>
           <include name="loginToApp"/>
+          <include name="create_organisations"/>
           <include name="launchbrowser"/>
           <include name="makeConnections"/>
           <include name="logout"/>
@@ -16,6 +17,19 @@
           <include name="aftersuite"/>
         </methods>
       </class> <!-- practice_scripts1.TCC01_CreateOrganisations -->
+      <class name="practice_scripts1.TCC03_Contacts">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="beforeTest"/>
+          <include name="loginToApp"/>
+          <include name="launchbrowser"/>
+          <include name="makeConnections"/>
+          <include name="logout"/>
+          <include name="createcontactWithouOrg"/>
+          <include name="aftertest"/>
+          <include name="aftersuite"/>
+        </methods>
+      </class> <!-- practice_scripts1.TCC03_Contacts -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
