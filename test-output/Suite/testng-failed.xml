@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="practice_scripts1.TCC01_CreateOrganisations">
+        <methods>
+          <include name="loginToApp"/>
+          <include name="create_organisations"/>
+          <include name="beforeTest"/>
+          <include name="create_emptyorg"/>
+          <include name="launchbrowser"/>
+          <include name="aftertest"/>
+          <include name="makeConnections"/>
+          <include name="aftersuite"/>
+          <include name="logout"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- practice_scripts1.TCC01_CreateOrganisations -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
